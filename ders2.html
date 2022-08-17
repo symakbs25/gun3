@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Çizim Yapma</h2>
+    
+    <canvas id="canvas" width="200" height="100" style="border:1px solid black ;">
+ </canvas>
+
+ <br>
+ <h3><a href="ders1.html">ders1</a></h3>
+ <h3><a href="ders2.html">ders2</a></h3>
+ <h3><a href="ders3.html">ders3</a></h3>
+ <h3><a href="ders4.html">ders4</a></h3>
+ <h3><a href="odev.html">odev</a></h3>
+
+ <script >
+    var c=document.getElementById("canvas");
+    var ctx=c.getContext("2d");
+
+//çizzgi çizme
+
+  /*  ctx.moveTo(0,0);
+    ctx.lineTo(100,100);
+    ctx.lineTo(200,0);
+    ctx.lineTo(200,200);
+    ctx.lineTo(0,200);
+    ctx.lineTo(100,200);
+    ctx.lineTo(100,100);
+    ctx.lineTo(0,100);
+
+    ctx.stroke();
+    */
+//çember çizme*/
+/*
+ctx.beginPath();
+ctx.arc(100,100,50,Math.PI/4,2*Math.PI);
+ctx.stroke();
+*/
+
+
+/*Metin ekleme
+ctx.font="20px Arial";
+ctx.fillText("-Hocam tatlı yok mu",10,100);
+ctx.fillText("-Sonra ",10,140);
+*/
+
+ctx.moveTo(0,0);
+    ctx.lineTo(135,30);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(150,45,23,0,2*Math.PI);
+    
+    ctx.stroke();
+
+    ctx.font="20px Arial";
+    ctx.fillText("Ş",142,52);
+
+   
+ </script>
+</body>
+</html>
